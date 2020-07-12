@@ -106,12 +106,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 0 3rem;
+  padding: 0;
 }
 
 .card .article-content .card-footer .share {
   border-radius: 0.5rem;
-  right: 5rem;
+  right: 2rem;
   bottom: 7.5rem;
   position: absolute;
   background-color: #48556a;
@@ -245,6 +245,9 @@ body {
   .card .article-content > p {
     padding: 1rem 3rem;
   }
+  .card .article-content .card-footer {
+    padding: 0 3rem;
+  }
   .card .article-content .card-footer .share {
     width: 100%;
     left: 0;
@@ -254,8 +257,9 @@ body {
             transform: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transform: none;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
   }
   .card .article-content .card-footer .share.active {
     opacity: 1;

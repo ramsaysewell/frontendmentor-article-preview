@@ -73,11 +73,11 @@ body {
 			grid-template-columns: auto 1fr auto;
 			align-items: center;
 			position: relative;
-			padding: 0 3rem;
+			padding: 0;
 
 			.share {
 				border-radius: 0.5rem;
-				right: 5rem;
+				right: 2rem;
 				bottom: 7.5rem;
 				position: absolute;
 				background-color: $very_dark_grayish_blue;
@@ -184,25 +184,30 @@ body {
 				padding: 1rem 3rem;
 			}
 
-			.card-footer .share {
-				width: 100%;
-				left: 0;
-				bottom: 0;
-				height: 100%;
-				transform: none;
-				border-top-left-radius: 0;
-				border-top-right-radius: 0;
-				transition: all 0.2s ease-in-out;
+			.card-footer {
+				padding: 0 3rem;
 
-				&.active {
-					opacity: 1;
-				}
-				> .share-btn {
-					display: flex;
-				}
+				.share {
+					width: 100%;
+					left: 0;
+					bottom: 0;
+					height: 100%;
+					transform: none;
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+					transform: none;
+					transition: opacity 0.2s ease-in-out;
 
-				&:after {
-					display: none;
+					&.active {
+						opacity: 1;
+					}
+					> .share-btn {
+						display: flex;
+					}
+
+					&:after {
+						display: none;
+					}
 				}
 			}
 		}
