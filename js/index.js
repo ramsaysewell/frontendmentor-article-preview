@@ -1,12 +1,12 @@
-const button = document.querySelector('.share-button');
-const tooltip = document.querySelector('.tooltip');
+const buttons = document.querySelectorAll('.share-btn');
+const share = document.querySelector('.share');
 
-const toggleTooltip = (e) => {
-	if (tooltip.classList.contains('active')) {
-		tooltip.classList.remove('active');
-	} else {
-		tooltip.classList.add('active');
-	}
-};
-
-button.addEventListener('click', toggleTooltip);
+buttons.forEach((button) => {
+	button.addEventListener('click', (e) => {
+		if (share.classList.contains('active')) {
+			share.classList.remove('active');
+		} else {
+			share.classList.add('active');
+		}
+	});
+});
